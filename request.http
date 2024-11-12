@@ -1,0 +1,27 @@
+# Crear un empleado
+POST http://localhost:9000/api/employees
+Content-Type: application/json
+
+{
+    "nombre": "Juan",
+    "apellido": "Pérez",
+    "cargo": "Cocinero",
+    "salario": 2000
+}
+
+# Obtener todos los empleados
+GET http://localhost:9000/api/employees
+
+# Obtener un empleado por ID
+GET http://localhost:9000/api/employees/{{}}
+
+# Actualizar un empleado
+PUT http://localhost:9000/api/employees/{{}}
+Content-Type: application/json
+
+{
+    "salario": 2500
+}
+
+# Eliminar un empleado
+DELETE http://localhost:9000/api/employees/{{}}
